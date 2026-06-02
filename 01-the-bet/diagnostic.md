@@ -33,6 +33,7 @@
 
 **Score rationale:**
 - Data has gravity, so customers are not likely to move or migrate to alternative solutions
+- We cannot use the customers actual data, but we can use the metadata (file type, file size, time of transfer, etc)
 
 **Named attacker (from partner challenge):**
 

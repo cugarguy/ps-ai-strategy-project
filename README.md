@@ -8,7 +8,7 @@
 
 | Component | Module | Status | Key Artifact |
 |-----------|--------|--------|-------------|
-| **The Bet** | M1 | [ ] | `01-the-bet/` |
+| **The Bet** | M1 | [ Complete] | `01-the-bet/` |
 | **The Moat** | M2 | [ ] | `02-the-moat/` |
 | **The Margin** | M3 | [ ] | `03-the-margin/` |
 | **The Contract** | M4 | [ ] | `04-the-contract/` |

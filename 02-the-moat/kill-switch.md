@@ -4,10 +4,10 @@
 
 | Dimension | Current State | Risk Level | 48-Hour Action |
 |-----------|--------------|------------|---------------|
-| **Provider** | | H / M / L | |
-| **Abstraction** | | H / M / L | |
-| **Routing** | | H / M / L | |
-| **Eval** | | H / M / L | |
+| **Provider** | Highly Concentrated: Granola relies on OpenAI (GPT-4o) and Anthropic (Claude 3.5 Sonnet) via standard developer APIs for its heavy-lifting synthesis and custom "Recipe" execution. | High | Freeze non-essential feature development and immediately switch default system prompt routing to open-weight models via an alternative inference provider. |
+| **Abstraction** | Proprietary/Hardcoded: Prompts, few-shot examples, and user "Recipes" are heavily tailored to the specific context window behaviors, instruction-following quirks, and system-prompt sensitivities of Anthropic and OpenAI.| Medium | Re-map core product management templates to a unified LLM wrapper framework (e.g., LangChain or an open-source gateway) to decouple application code from specific provider SDKs.|
+| **Routing** | Static/Hardcoded: Requests are statically routed based on the complexity of the "Recipe" or summary requested (e.g., standard summaries to a faster model, complex cross-meeting synthesis to a smarter model). No real-time dynamic failure fallback or cost-optimizing router.| Medium | |
+| **Eval** | Ad-Hoc/User-Driven: Quality control relies primarily on real-time human correction (the PM editing the output). Granola lacks an automated, programmatic internal evaluation harness to test output consistency across different model swaps.| High | Stand up a continuous integration evaluation suite running automated assertions on a golden dataset of past meeting transcripts to ensure formatting and structured data output don't break during an emergency swap.|
 
 ## Portability Score
 <!-- Ready / Partial / Locked -->

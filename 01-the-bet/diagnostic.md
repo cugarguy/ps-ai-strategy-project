@@ -2,7 +2,7 @@
 
 ## Product
 **Product:**
-- Storage Gateway - Hybrid storage 
+- Granola AI - Transcription tool
 
 **Your Role:**
 - Product manager 

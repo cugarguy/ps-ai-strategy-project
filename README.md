@@ -16,24 +16,25 @@
 
 ## The Bet (M1)
 **What we're building, for whom, why now.**
-- **Product:** Granola AI (granola.ai) — An AI-powered notepad and meeting context layer designed specifically for product teams. It records system audio locally (no visible bots) and enhances sparse, human-typed keywords into structured roadmap insights, user pain points, and PRD evidence.
+- **Product:** Granola AI is an AI-powered notepad for product managers. It records computer audio locally and converts short, handwritten notes into formatted product documents like roadmaps and PRDs.
 - **AI Value Archetype:** Automator
-- **Vulnerability Scores:** Moat **3/5** | Data **2/5** | Platform **4/5**
-- **Top Risk:** *The Ambient OS Commoditization of Bot-Free Audio.* Granola's primary differentiator is an architectural loophole of capturing local system audio to avoid bot fatigue. As operating systems (macOS/Windows) and communication platforms (Zoom/Teams) bake permissioned ambient audio processing natively into their platforms, a pure "transcribe and summarize" utility is instantly commoditized.
-- **Confidence:** M (Medium)
-- **Prototype:** [https://lovable.dev/projects/b4a5bced-1aac-493c-8945-6eaa4987e015](https://lovable.dev/projects/b4a5bced-1aac-493c-8945-6eaa4987e015)
-- **Kill Criteria:** Saturated market indicators. When the product is no longer differentiated or when competitors can easily replicate the identical workflow out-of-the-box by wrapping standard frontier APIs.
+- **Vulnerability Scores:** Moat 3/5 | Data 2/5 | Platform 4/5
+- **Top Risk:** Apple and Microsoft are adding free, native audio recording into their operating systems. This destroys Granola's main reason to exist, which is capturing meeting audio without a bot joining the call.
+- **Confidence:** M
+- **Prototype:** https://lovable.dev/projects/b4a5bced-1aac-493c-8945-6eaa4987e015
+- **Kill Criteria:** We stop development if Apple or Microsoft release full system-level audio transcription for all third-party software, or if standard models can replicate this workflow out-of-the-box.
 
 ---
 
 ## The Moat (M2)
 **Why this won't get copied in 6 months.**
-- **Data Flywheel Score:** **9/20**
+- **Data Flywheel Score:** 9/20
 - **Weakest Loop:** Network Loop (1/5)
-- **Competitive Position:** Highly sticky on-device UX interaction loop ("write-then-enhance"), but highly exposed to enterprise graph aggregation and native platform encroachment.
-- **Encroachment Defense:** Pivot aggressively from a standard documentation editor into a **Universal Open Context Engine for AI Engineers**. By exposing an open-source Model Context Protocol (MCP) server framework, Granola lets developers pipe hyper-accurate, human-guided meeting metadata directly into external engineering agents and IDEs (like Cursor or Claude Code).
-- **Vendor Portability:** **Partial**
-  - *Rationale:* While Granola is an installed desktop application that captures audio and manages text files locally (high data portability), its cognitive synthesis layer is tightly bound to commercial APIs (Anthropic/OpenAI). Moving raw files is trivial; moving the specialized processing logic without losing output quality is not.
+- **Competitive Position:** The text editor is sticky because users must type while listening. However, the software cannot aggregate data across different companies, leaving it exposed to larger enterprise platforms.
+- **Encroachment Defense:** Granola will stop acting as a standard document editor. It will become an open server framework using the Model Context Protocol. This lets developers feed accurate meeting data straight into engineering tools like Cursor or Claude Code.
+- **Vendor Portability:** Partial
+  - *Rationale:* Granola stores audio files and text notes locally on the user's computer. This data is easy to move. However, the logic that formats the notes belongs to OpenAI and Anthropic APIs. Changing those models will alter the output quality.
+
 ---
 
 ## The Margin (M3)

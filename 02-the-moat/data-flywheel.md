@@ -13,24 +13,24 @@
 | **Network** | Does each new user / team make the product better for everyone? | Isolated | Strong network effects | 3/5 |
 
 ### Correction Loop - 2/5
-**What you capture today:**
-**How it compounds:**
+**What you capture today:** basic binary feedback
+**How it compounds:** volume of same feedback send general signal
 
-### Preference Loop - 2/5
-**What you capture today:**
-**How it compounds:**
+### Preference Loop - 3/5
+**What you capture today:** multiple user preferences and customizations
+**How it compounds:** over volume of customers are able to see trends for and against preferences
 
 ### Domain Context Loop - 2/5
-**What you capture today:**
-**How it compounds:**
+**What you capture today:** very little as recordings are not saved, only notes entered by users 
+**How it compounds:** We are able to estimate how much users are using for notetaking versus relying mainly on transcript and ai generated summaries
 
 ### Network Loop - 2/5
-**What you capture today:**
-**How it compounds:**
+**What you capture today:** The system does improve per user, but teams is weaker as the recording are reduced to single view primarly based on transcript
+**How it compounds:** limited if any 
 
 **Total Flywheel Score: 8/20**
-**Weakest Loop:**
-**Fix for weakest loop:**
+**Weakest Loop:** Network loop
+**Fix for weakest loop:** incorporate multi person team input to notes.
 
 ---
 

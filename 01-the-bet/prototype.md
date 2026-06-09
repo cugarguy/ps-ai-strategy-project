@@ -18,6 +18,9 @@ Automator
 
 ## The Bet in One Sentence
 <!-- What you're building, for whom, why now -->
+An AI-powered notepad and meeting context layer designed specifically for product teams. It records system audio locally (no visible bots) and enhances sparse, human-typed keywords into structured notes and action items.
+Target User: PMs who attend meetings a lot or webinars or take online video phone calls
+Problem Solved: rather than users having to take notes of their own, they can allow Transcriptor to capture all the details, summarize the entire conversation, and produce the product oriented notes and action items. 
 
 ## Kill Criteria
 <!-- When would you stop? What evidence would kill this bet? -->

@@ -7,28 +7,28 @@
 
 | Loop | What It Measures | Score 1 | Score 5 | Score |
 |------|------------------|---------|---------|-------|
-| **Correction** | Do users fix AI outputs? Is that signal captured and reused? | No capture | Automated retraining | __/5 |
-| **Preference** | Does the product learn individual / team preferences over time? | Stateless | Deep personalization | __/5 |
-| **Domain Context** | Does usage in one area improve quality in adjacent areas? | Siloed | Cross-domain transfer | __/5 |
-| **Network** | Does each new user / team make the product better for everyone? | Isolated | Strong network effects | __/5 |
+| **Correction** | Do users fix AI outputs? Is that signal captured and reused? | No capture | Automated retraining | 2/5 |
+| **Preference** | Does the product learn individual / team preferences over time? | Stateless | Deep personalization | 4/5 |
+| **Domain Context** | Does usage in one area improve quality in adjacent areas? | Siloed | Cross-domain transfer | 3/5 |
+| **Network** | Does each new user / team make the product better for everyone? | Isolated | Strong network effects | 3/5 |
 
-### Correction Loop - __/5
+### Correction Loop - 2/5
 **What you capture today:**
 **How it compounds:**
 
-### Preference Loop - __/5
+### Preference Loop - 2/5
 **What you capture today:**
 **How it compounds:**
 
-### Domain Context Loop - __/5
+### Domain Context Loop - 2/5
 **What you capture today:**
 **How it compounds:**
 
-### Network Loop - __/5
+### Network Loop - 2/5
 **What you capture today:**
 **How it compounds:**
 
-**Total Flywheel Score: __/20**
+**Total Flywheel Score: 8/20**
 **Weakest Loop:**
 **Fix for weakest loop:**
 

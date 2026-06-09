@@ -37,22 +37,22 @@
 ## Encroachment Threat Assessment
 
 ### 1. Platform Encroachment
-**Attacker:**
-**Vector:**
-**Time-to-threat:**
-**% of value at risk:**
+**Attacker:** Apple / Microsoft (System OS level)
+**Vector:** Implementing native, local system-audio recording wrappers directly into the kernel architecture (e.g., Apple Intelligence native audio routing or Windows Recall API extensions). This entirely bypasses the need for an application to handle audio loopback routing.
+**Time-to-threat:** 6–12 months
+**% of value at risk:** 65% (Destroys Granola’s core client acquisition engine: "the transcription utility without a bot").
 
 ### 2. Vertical Competitor
-**Attacker:**
-**Vector:**
-**Time-to-threat:**
-**% of value at risk:**
+**Attacker:** Productboard / Dovetail
+**Vector:** Adding an un-intrusive desktop audio recording application that directly drops transcribed, synthesized user feedback into their existing, deeply entrenched product roadmapping and telemetry dashboards.
+**Time-to-threat:** 3–6 months
+**% of value at risk:** 45% (Poaches high-value enterprise product organizations who want a tight link between raw audio text and formal feature roadmap tracking).
 
 ### 3. Adjacent Expansion
-**Attacker:**
-**Vector:**
-**Time-to-threat:**
-**% of value at risk:**
+**Attacker:** Notion / Slack
+**Vector:** Launching a native huddle or scratchpad recorder that syncs perfectly with enterprise wikis. Notion AI natively expanding sparse bullet points inside a team workspace removes the need to copy-paste data out of Granola entirely.
+**Time-to-threat:** 6 months
+**% of value at risk:** 0% (Eliminates downstream workflow integration value).
 
 ---
 
@@ -60,9 +60,15 @@
 
 *Your partner played the Big Tech attacker. What was their plan to kill you?*
 
-**Attacker:**
-**Attack vector (target the weakest loop):**
-**Weeks 1-4 - what they ship:**
+**Attacker:** Microsoft (Teams Ecosystem + Copilot Studio)
+**Attack vector (target the weakest loop):** Exploding the Network Loop. Microsoft weaponizes its native enterprise graph data, combining local Teams system audio capture with existing Outlook emails, Azure DevOps logs, and Word docs—providing a unified context layer Granola cannot match.
+**Weeks 1-4 - what they ship:** 
+- The "Ghost Recorder" Feature: Microsoft ships a quiet update to the Windows/Teams ecosystem allowing background local-audio transcription without an inviting bot, entirely neutralizing Granola's primary UX hook.
+- Inline "Shorthand" Capture: They introduce a minimalist text widget overlay inside Teams called "Copilot Scratchpad" that copies Granola’s core interaction loop: type 3 words during a call, and Copilot expands it using local context.
 **Weeks 5-8 - how they poach users:**
-**Weeks 9-12 - why users don't come back:**
-**Your defense:**
+- The Downstream Multi-Silo Stitch: Microsoft hooks this local transcription data directly into Azure DevOps, Loop, and Outlook. If a PM types a shorthand note during a call, Copilot automatically generates the formal epic, links it to active engineering sprint items, and drafts the release email in Outlook with zero copy-pasting.
+- Zero-Dollar Pricing: They offer this functionality completely free within standard enterprise E5 licenses, framing Granola as an unnecessary, redundant per-seat cost.
+**Weeks 9-12 - why users don't come back:** 
+**Your defense:** 
+- The Organizational Data Gravity: Because Microsoft's tool actively populates the enterprise-wide knowledge base across all departments (Sales, Engineering, Support), it builds a compounding organizational data moat.
+- A PM cannot return to Granola because Granola only knows what the PM typed, whereas Microsoft's ecosystem knows what the client told the sales rep, what engineering logged in a ticket, and what the executive team outlined in a strategy brief.

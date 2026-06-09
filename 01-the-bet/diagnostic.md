@@ -2,10 +2,10 @@
 
 ## Product
 **Product:**
-- Granola AI (granola.ai) — An AI-powered notepad and meeting context layer designed specifically for product teams. It records system audio locally (no visible bots) and enhances sparse, human-typed keywords into structured roadmap insights, user pain points, and PRD evidence.
+- Granola AI records computer audio locally without visible bots. It turns quick, human-typed keywords into formatted roadmaps, user pain points, and PRDs for product teams.
 
 **Your Role:**
-- Chief Product Officer (CPO) / AI Strategist
+- Chief Product Officer and AI Strategist
 
 ---
 
@@ -18,12 +18,11 @@
 - 3/5
 
 **Score rationale:**
-- The "Active Listening" Hook: Granola builds an elegant workflow habit by requiring the PM to type keywords during the meeting to guide the AI’s expansion ("the write-then-enhance loop"). This keeps the user highly engaged compared to passive, hands-off bot recorders.
-- Surface-Level Workflow Integration: While its custom "Recipes" map directly to product-specific frameworks (e.g., Jobs-to-be-Done, Feature Requests), the current exit friction is low. Notes are heavily reliant on external downstream systems (Notion, Jira, Linear). If an alternative tool captures the same audio invisibly and maps better to Jira, switching costs are minimal unless the team has aggressively adopted Granola's shared "Spaces" or semantic cross-meeting chat functionality.
+- Users must type keywords during calls to guide the notes. This active writing loop creates a strong daily habit.
+- Moving notes out of the app is easy. The tool relies on exporting data to tools like Notion, Jira, and Linear. If a competitor offers cleaner integration with those platforms, users can switch quickly.
 
 **Named attacker (from partner challenge):**
-- Dovetail / Productboard: Incumbent product management research suites building native, un-intrusive local audio recording loops with tighter roadmapping loops.
-- Convo: A direct 2026 workflow competitor focusing on real-time assistance during calls rather than post-call documentation assembly.
+- Dovetail and Productboard are adding local audio capture directly into their established product research software.
 
 ---
 
@@ -34,11 +33,12 @@
 - 2/5
 
 **Score rationale:**
-- No Proprietary Underlying Models: Granola acts as an orchestration layer using top-tier public LLMs (GPT-4o, Claude 3.5 Sonnet). It enforces strict privacy constraints (no third-party model training allowed on customer transcripts), meaning it cannot use its core data to uniquely train a specialized foundation model.
-- The Context Assembly Advantage: Its data advantage is not the raw text, but the metadata alignment—specifically matching sparse human-typed shorthand keys to the precise temporal chunks of raw system audio transcripts. This creates an organized multi-meeting semantic memory layer (via Model Context Protocol / MCP) that generic LLM windows cannot natively access without explicit context feeding.
+- Granola uses standard public APIs from OpenAI and Anthropic. Privacy rules prevent the company from training models on user transcripts, so the software does not build a unique core model edge.
+- The only data advantage is linking a user's typed shorthand notes to specific timestamps in the audio recording. This maps meeting context in a way a generic LLM window cannot access.
 
 **Named attacker (from partner challenge):**
-- OpenAI (ChatGPT Desktop App / Advanced Voice Mode): If OpenAI’s native system-level desktop wrappers begin persistently holding local, cross-session semantic memory specifically tailored to user-defined workspace schemas.
+- The ChatGPT Desktop App can hold local, cross-session memory if OpenAI adapts it for workspace templates.
+
 ---
 
 ### Platform Exposure
@@ -48,18 +48,16 @@
 - 4/5
 
 **Score rationale:**
-- High OS & Application Dependency: Granola's killer utility is that it captures system/microphone audio locally without a clunky Zoom/Meet bot. However, this relies entirely on OS-level permissions (macOS/Windows) and application hooks.
-- The Native "Invisibot" Encroachment: Microsoft (via Copilot native in Teams/Windows Recall frameworks), Apple (via system-wide Apple Intelligence audio utilities), and Google Workspace are actively turning on native, system-level, bot-free meeting transcription. When transcription is entirely ambient and free within the operating system or browser, a pure "transcribe and summarize" utility is instantly commoditized.
+- Granola relies entirely on operating system permissions to record loopback audio without a bot. This leaves it vulnerable to system updates.
+- Apple, Microsoft, and Google are building free, bot-free transcription directly into macOS, Windows, and Teams. When transcription becomes a free operating system feature, standalone notetakers lose their core value.
 
 **Named attacker (from partner challenge):**
+- Microsoft Teams and Zoom Workplace are launching hidden, local audio recording that places structured notes directly inside corporate wikis.
 
 ---
 
 ## Top Vulnerability
-<!-- One line: what's the single biggest strategic risk? -->
-- The Ambient OS Commoditization of Bot-Free Audio: Granola's primary differentiator is an architectural loophole—capturing local system audio to avoid "bot fatigue." As operating systems (macOS/Windows) and communication platforms (Zoom/Teams) bake hidden, permissioned ambient audio processing directly into the core platform, Granola must aggressively pivot from a notetaker to an enterprise data infrastructure/MCP context layer to survive.
+- Free, built-in operating system audio recording will commoditize standalone transcription utilities, forcing Granola to move from a text notebook to an enterprise infrastructure layer.
 
 ## Confidence Level
-<!-- H / M / L — how confident are you in this bet after the diagnostic? -->
-- M 
-— While the risk of OS-level feature encroachment is incredibly high, Granola's recent Series C shift toward building an enterprise-wide API context layer and utilizing Model Context Protocol (MCP) to serve as the unified cognitive background memory for external IDEs and AI agents (like Claude or Cursor) shows a viable defensive trajectory.
+- M. The platform risk is high, but Granola can defend its position by opening an server framework via the Model Context Protocol to feed clean data into external AI tools like Cursor.

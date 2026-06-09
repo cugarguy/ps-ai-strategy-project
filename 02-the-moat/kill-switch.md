@@ -4,22 +4,20 @@
 
 | Dimension | Current State | Risk Level | 48-Hour Action |
 |-----------|--------------|------------|---------------|
-| **Provider** | Highly Concentrated: Granola relies on OpenAI (GPT-4o) and Anthropic (Claude 3.5 Sonnet) via standard developer APIs for its heavy-lifting synthesis and custom "Recipe" execution. | High | Freeze non-essential feature development and immediately switch default system prompt routing to open-weight models via an alternative inference provider. |
-| **Abstraction** | Proprietary/Hardcoded: Prompts, few-shot examples, and user "Recipes" are heavily tailored to the specific context window behaviors, instruction-following quirks, and system-prompt sensitivities of Anthropic and OpenAI.| Medium | Re-map core product management templates to a unified LLM wrapper framework (e.g., LangChain or an open-source gateway) to decouple application code from specific provider SDKs.|
-| **Routing** | Static/Hardcoded: Requests are statically routed based on the complexity of the "Recipe" or summary requested (e.g., standard summaries to a faster model, complex cross-meeting synthesis to a smarter model). No real-time dynamic failure fallback or cost-optimizing router.| Medium | Deploy an open-source proxy layer (like LiteLLM) to handle dynamic fallback, ensuring that if Provider A fails or limits API access, traffic instantly and silently reroutes to Provider B.|
-| **Eval** | Ad-Hoc/User-Driven: Quality control relies primarily on real-time human correction (the PM editing the output). Granola lacks an automated, programmatic internal evaluation harness to test output consistency across different model swaps.| High | Stand up a continuous integration evaluation suite running automated assertions on a golden dataset of past meeting transcripts to ensure formatting and structured data output don't break during an emergency swap.|
+| **Provider** | Granola relies on OpenAI and Anthropic APIs for text synthesis and custom formats[cite: 5]. | High | Pause new features and shift prompt routing to open-weight models via a third-party inference host[cite: 5]. |
+| **Abstraction** | Prompts and user formats are built for the specific window behaviors and system guidelines of Anthropic and OpenAI[cite: 5]. | Medium | Connect core product templates to a unified model wrapper framework to separate application code from specific provider tools[cite: 5]. |
+| **Routing** | Traffic uses fixed routing based on text complexity[cite: 5]. There is no automatic backup engine or real-time cost balancing[cite: 5]. | Medium | Set up an open proxy layer like LiteLLM to route traffic to alternative providers instantly if a main API fails[cite: 5]. |
+| **Eval** | Quality tracking relies entirely on live user edits[cite: 5]. Granola has no automated system to test layout errors during model changes[cite: 5]. | High | Build an automated test suite running code assertions on past transcript data to verify formatting stays intact[cite: 5]. |
 
 ## Portability Score
-<!-- Ready / Partial / Locked -->
-**Partial**
-**Rationale:** While Granola is an installed desktop application that captures audio and manages text files locally (which makes client data highly portable), its cognitive synthesis layer is tightly bound to commercial APIs. Moving the text files is trivial; moving the specialized processing logic without losing output quality is not.
+Partial[cite: 5]
 
-## If Anthropic (Claude 3.5 Sonnet) or OpenAI (GPT-4o) doubles pricing tomorrow:
-<!-- What's your 48-hour response? -->
-**Deploy Alternative Inference Providers:** Immediately shift the application backend to run through alternative infrastructure providers (such as DeepSeek, Groq, or Together AI) using high-performance open-weight models like Llama 3.1 70B/405B.
-**On-Device Offloading:** Lean heavily into Granola's existing local-first desktop footprint. Offload basic transcription formatting and initial shorthand note-cleansing to a compact, local on-device model (such as a quantized Llama 3 8B or Mistral 7B) running directly on the user's local hardware (e.g., leveraging Apple Silicon's Neural Engine), saving premium cloud API calls exclusively for complex multi-meeting cross-referencing.
+**Rationale:** Granola runs as a desktop application that keeps text files and audio recordings locally on the computer[cite: 5]. This data is easy to extract[cite: 5]. However, the processing logic requires commercial cloud APIs[cite: 5]. Moving the files is simple, but moving the formatting logic alters output quality[cite: 5].
 
-## If Deepgram and AssemblyAI ships a competing product:
-<!-- What's defensible that they can't replicate? -->
-**The "Write-Then-Enhance" Interaction Loop:** Foundation model providers offer passive chat interfaces or brute-force transcripts. They do not own the intentional UX interaction where a PM intentionally types minimalist context during a meeting to shape the final output.
-**The Local Context and Shorthand Mapping:** The core defensible asset is Granola's precise metadata map—linking sparse, human-typed keywords to specific temporal chunks of local system audio. A foundation model provider only sees the final raw text block fed into an API. They lack the local system hook that captures the exact micro-moments of human focus and interest as the conversation is happening.
+## If Anthropic or OpenAI doubles pricing tomorrow:
+- **Move to alternative hosts:** Swap the application backend to alternative inference hosts using open-weight models like Llama[cite: 5].
+- **Use local hardware:** Process baseline transcription text on the user's local computer using a smaller model running on the local device chip[cite: 5]. Save paid cloud API calls for multi-meeting lookups[cite: 5].
+
+## If Deepgram and AssemblyAI ship a competing product:
+- **The interactive loop:** Competitors offer passive audio transcripts[cite: 5]. They do not own the text setup where a manager types short notes during a call to change the output format[cite: 5].
+- **The text-to-audio map:** Granola links typed keywords to precise time stamps in the local audio recording[cite: 5]. API providers only see final text strings[cite: 5]. They lack the local software layer that tracks what the user focuses on during the meeting[cite: 5].

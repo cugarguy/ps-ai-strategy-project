@@ -1,4 +1,6 @@
-## Cost Curve & Pricing Strategy## Cost Model
+## Cost Curve & Pricing Strategy
+
+## Cost Model
 
 | Cost Category | Per-User/Month | Notes |
 |---|---|---|

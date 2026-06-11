@@ -52,6 +52,21 @@ Model: Hybrid
 
 ## Board One-Pager
 
-**Before (traditional SaaS):** Flat $10 monthly seat price for basic local note storage. Low server cost but limited expansion.
-**After (AI-enabled):** Premium $30 monthly tier providing automatic PRD creation and institutional product memory.
-**Net margin shift:** Gross profit climbs from $3.30 to $23.30 per seat. Shifting 80% of routine processing to the triage model protects this margin at scale.
+### Before — Traditional SaaS
+- **Revenue:** $10 / seat × 100 seats ($1,000 total)
+- **COGS:** $1.50 per seat (fixed server hosting)
+- **Gross margin:** 85%
+
+### After — AI-Powered
+- **Revenue:** $30 base + $0.50 × hours over 40 hours ($3,000 base total)
+- **COGS:** $21.60 per user (variable inference and transcription)
+- **Gross margin:** 28%
+
+### Net Margin Shift
+- **Δ margin %:** -57%
+- **Δ gross $:** +$19.00 per seat (Climbed from $8.50 to $27.50 gross profit per user at base volume)
+
+### Narrative
+We are trading high margin percentages for significantly larger gross profit dollars. The baseline SaaS version yielded $8.50 in gross profit per seat, while the AI version yields $27.50 per seat. This 3x increase in gross cash per user expands our net revenue retention because the software replaces manual engineering documentation labor. 
+
+To hedge against heavy users eroding this margin, the hybrid pricing model applies a $0.50 per-hour fee above the 40-hour threshold. This coverage ensures that every added hour of meeting volume remains profitable.

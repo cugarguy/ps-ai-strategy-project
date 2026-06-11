@@ -1,5 +1,3 @@
-Here is the completed form populated for Granola AI, synthesizing our previous unit economics estimations with the framework principles outlined in the AI Product Strategy curriculum.
-------------------------------
 ## Cost Curve & Pricing Strategy## Cost Model
 
 | Cost Category | Per-User/Month | Notes |
@@ -37,13 +35,4 @@ Here is the completed form populated for Granola AI, synthesizing our previous u
 * Before (traditional SaaS): Granola acts as a local text editor with simple cloud syncing. Infrastructure cost is a fixed $0.15/user/month. At $14/month revenue, the product enjoys a 98.9% gross margin.
 * After (AI-enabled): Granola functions as a full-service automated executive secretary. Variable inference injection introduces a dynamic $2.17 cost per user. Total COGS reaches $2.30/user/month.
 * Net margin shift: Gross margins contract from 98.9% down to 83.5%. While the margin profile shifts down, the deep stickiness of the AI workspace increases LTV (Lifetime Value) and dramatically lowers customer churn, justifying the variable token trade-off.
-
-------------------------------
-If you want to refine this model further, let me know if we should:
-
-* Adjust the average meetings per month slider to see the margin breaking point.
-* Map out the specific open-weights architecture needed to replace the OpenAI/Anthropic APIs.
-* Draft the financial scenario for shifting entirely to an outcome-based pricing model.
-
-Which lever should we stress-test next?
 

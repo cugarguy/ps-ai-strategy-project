@@ -13,16 +13,34 @@
 
 ## Cascading Strategy
 
+| Feature Complexity | Model Tier | Cost/Req | Volume % | Weighted Cost |
+| :--- | :--- | :--- | :--- | :--- |
+| **Simple** (Shorthand cleanups, keyword expansion, formatting) | Small (GPT-4o-mini) | $0.005 | 60% | $0.09 |
+| **Medium** (Standard meeting summary, action item extraction) | Mid (Claude 3.5 Haiku) | $0.020 | 30% | $0.18 |
+| **Complex** (Multi-meeting search, cross-domain roadmapping, PRD generation) | Frontier (Claude 3.5 Sonnet) | $0.150 | 10% | $0.45 |
+| **Blended** | | | **100%** | **$0.72 per meeting** |
+
+*Note: Based on an average volume of 30 meetings per user per month, total monthly inference COGS is $21.60.*
+
 **Triage model:** GPT-4o-mini
 **Frontier model:** Claude 3.5 Sonnet
-**Routing rule:** Route routine transcripts and direct formatting requests to the triage model. Scale to the frontier model only when the user triggers cross-meeting analysis, workspace search, or large PRD generations.
-**Expected cascade ratio:** 80% triage / 20% frontier
+**Routing rule:** Route routine shorthand expansions, text formatting, and direct meeting summaries to the triage model. Route requests to the frontier model only when the user triggers cross-meeting analysis, deep repository search, or formal PRD document generations.
+**Expected cascade ratio:** 90% triage / 10% frontier
+
 
 ## Pricing Model
+1. **Pick your strategy**
+Mine: Skim
+2. **Name the unit of work**
+Unit: Processed meeting hour
+3. **Set the structure**
+Base: $30/mo
+Usage: $0.50/processed hour over 40 hours
+**Pricing Model**
+Current pricing: $10 / seat / month
+Proposed AI pricing: $30 base tier up to 40 meeting hours, then usage-based billing
+Model: Hybrid
 
-**Current pricing:** $10 / seat / month
-**Proposed AI pricing:** $30 / seat / month
-**Model:** Seat-based with a soft usage cap at 40 meetings a month.
 
 ## Stress Tests
 

@@ -9,7 +9,7 @@
 | The moat | M2 | [x] Complete | `02-the-moat/` |
 | The margin | M3 | [x] Complete | `03-the-margin/` |
 | The contract | M4 | [x] Complete | `04-the-contract/` |
-| The guardrails | M5 | [ ] Pending | `05-the-guardrails/` |
+| The guardrails | M5 | [x] Pending | `05-the-guardrails/` |
 | The pitch | M6 | [ ] Pending | `06-the-pitch/` |
 
 ---

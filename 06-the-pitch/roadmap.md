@@ -67,8 +67,13 @@ We are asking for $250,000, 2 Senior AI/Data Engineers, 1 Full-Stack Engineer, a
 *Your 3-sentence AI strategy from Module 1 vs. what you'd say now:*
 
 **M1 baseline:**
+- Use AI to build the product
+- Use AI to automate the processes where possible
+- Use AI to perform the work of the product
 
 **Now:**
+Our AI strategy is to build a local, bot-free notepad for product managers that transforms raw shorthand and audio into structured product artifacts. We defend this position against native OS audio recording by capturing user edits as deep personal formatting preferences and connecting them directly to automated downstream CRM and task workflows. Economically, we maximize margins via an $80\%$ triage / $20\%$ frontier model cascading router while unlocking high-value, outcome-based revenue through automated system updates.
 
-
+**Growth**
+This is an amzing difference. I now see it clearly, sucintly, and in context - AI strategy is specific, detailed, and highly targeted. The toolset used to get here is invaluable. Not just for teaching these concepts, but for using them in real world scenarios. 
 

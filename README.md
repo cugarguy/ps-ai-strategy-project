@@ -74,6 +74,7 @@ Why users will trust a probabilistic system.
 * **Agent Boundaries:** Boundary enforcement utilizes four distinct agent typologies: the *Notes Agent* handles localized transcription and summarization but cannot modify external systems; the *Memory Agent* provides context-bounded Q&A without inferring ungrounded facts; the *Workflow Agent* drafts downstream tickets and updates without direct write authority; and the *Governance Agent* oversees security parameters, blocks risky outputs, and flags escalations.
 
 * **Regulatory Exposure:** Financial and consumer data fall under GDPR, UK GDPR, CCPA/CPRA, and regional call-recording consent rules. Under the EU AI Act, the application operates within a "limited-risk" tier for standard meeting assistance, utilizing user-initiated capture, clear notice flows, private-by-default configurations, and enterprise-level training opt-outs to maintain compliance.
+
 → Details: [`05-the-guardrails/`](05-the-guardrails/)
 
 ---
@@ -82,10 +83,10 @@ Why users will trust a probabilistic system.
 
 **How you get this funded, shipped, and adopted.**
 
-- **Horizon 1 (Now):**
-- **Horizon 2 (Next):**
-- **Horizon 3 (Bet):**
-- **Board Narrative:** [1-sentence thesis]
-- **Key Metric:**
+* **Horizon 1 (Now):** Assess native OS audio layers, expand the evaluation dataset to 100+ cases, and implement a model cascading router to stabilize accuracy and protect baseline margins.
+* **Horizon 2 (Next):** Bridge the missing workflow completion loop by shipping automated CRM update generators and project task draft integrations to drive user stickiness.
+* **Horizon 3 (Bet):** Scale into an un-copyable corporate data moat by delivering multi-meeting customer-insight synthesis and permissions-grounded product knowledge graphs.
+* **Board Narrative:** Granola AI neutralizes the threat of free OS-level audio transcription by transforming a local PM notepad into an indispensable, automated workflow execution engine fueled by deeply personalized styling loops.
+* **Key Metric:** Post-meeting workflow completion rate (percentage of generated notes successfully converted into shared project artifacts or CRM writes).
 
 → Details: [`06-the-pitch/`](06-the-pitch/)

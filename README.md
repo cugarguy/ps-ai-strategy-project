@@ -65,12 +65,15 @@ Why users will trust a probabilistic system.
 
 **What breaks when this scales — and what compounds.**
 
-- **Compounding System:** [describe feedback loops]
-- **Governance Posture:** [approach]
-- **Shadow AI Status:** __ tools found, __ triaged
-- **Agent Boundaries:**
-- **Regulatory Exposure:**
+* **Compounding System:** The platform faces active cross-domain transfer compounding, where prior meeting data, calendar context, and unresolved action items enrich pre-meeting briefs and surface patterns across customer calls. However, recursive learning and network intelligence loops are currently broken because user corrections to notes and formatting are not reliably captured as durable preferences or evaluation data. Workflow completion remains a missing loop, leaving meeting intelligence trapped in notes instead of turning into completed downstream steps.
 
+* **Governance Posture:** Features operating on authorized data run autonomously—including note generation, summarization, permissions-grounded Q&A, and draft suggestions. However, strict human approval is required for external sharing, message delivery, tool writes, and long-term personalization loops. Escalation triggers route tasks immediately to human review if system confidence drops below 70%, ungrounded outputs occur, sensitive content (legal, HR, financial) is detected, or the user attempts to execute high-risk external commitments.
+
+* **Shadow AI Status:** 10 tools found, 10 triaged
+
+* **Agent Boundaries:** Boundary enforcement utilizes four distinct agent typologies: the *Notes Agent* handles localized transcription and summarization but cannot modify external systems; the *Memory Agent* provides context-bounded Q&A without inferring ungrounded facts; the *Workflow Agent* drafts downstream tickets and updates without direct write authority; and the *Governance Agent* oversees security parameters, blocks risky outputs, and flags escalations.
+
+* **Regulatory Exposure:** Financial and consumer data fall under GDPR, UK GDPR, CCPA/CPRA, and regional call-recording consent rules. Under the EU AI Act, the application operates within a "limited-risk" tier for standard meeting assistance, utilizing user-initiated capture, clear notice flows, private-by-default configurations, and enterprise-level training opt-outs to maintain compliance.
 → Details: [`05-the-guardrails/`](05-the-guardrails/)
 
 ---

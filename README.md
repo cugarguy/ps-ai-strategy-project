@@ -10,7 +10,7 @@
 | The margin | M3 | [x] Complete | `03-the-margin/` |
 | The contract | M4 | [x] Complete | `04-the-contract/` |
 | The guardrails | M5 | [x] Pending | `05-the-guardrails/` |
-| The pitch | M6 | [ ] Pending | `06-the-pitch/` |
+| The pitch | M6 | [x] Pending | `06-the-pitch/` |
 
 ---
 
